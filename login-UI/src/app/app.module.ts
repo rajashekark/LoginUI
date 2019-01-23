@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { UserRegisterComponent } from './user-register/user-register.component';
 import { DisplayUsersComponent } from './display-users/display-users.component';
 import { HttpClientModule } from '../../node_modules/@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,8 @@ import { HttpClientModule } from '../../node_modules/@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
+    
    
   ],
   providers: [

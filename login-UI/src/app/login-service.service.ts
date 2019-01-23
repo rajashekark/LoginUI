@@ -22,5 +22,11 @@ public getUserDetails() {
   .get<UserDetails[]>(`${this.url}/showUserDetails`)
 }
 
+public createUser(user: UserDetails):Observable<UserDetails> {
+  return this
+  .http
+  .post<UserDetails>(`${this.url}/saveUserDetails`,user)
+
+}
 }
 
